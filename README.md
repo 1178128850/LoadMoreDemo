@@ -1,4 +1,10 @@
 # LoadMoreDemo 下拉刷新，上拉加载
+
+
+        maven { url "https://jitpack.io" }
+
+    implementation 'com.github.Aspsine:SwipeToLoadLayout:v1.0.2'
+
 1 SwipeToLoadLayout 子view headview view footerview id必须固定为 swipe_refresh_header swipe_target swipe_load_more_footer
 
 com.aspsine.swipetoloadlayout.SwipeToLoadLayout
