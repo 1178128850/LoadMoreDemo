@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="obe.killua.loadmoredemo.MainActivity">
+    <com.aspsine.swipetoloadlayout.SwipeToLoadLayout
+        android:id="@+id/swipe_loadMore"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:refresh_enabled="true"
+        app:load_more_enabled="true"
+        app:swipe_style="blew">
+        <obe.killua.loadmoredemo.view.MyHeaderView
+            android:id="@id/swipe_refresh_header"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="下拉刷新"/>
+        </obe.killua.loadmoredemo.view.MyHeaderView>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/swipe_target"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <obe.killua.loadmoredemo.view.MyFooterView
+            android:id="@id/swipe_load_more_footer"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="上拉加载"/>
+        </obe.killua.loadmoredemo.view.MyFooterView>
+    </com.aspsine.swipetoloadlayout.SwipeToLoadLayout>
+</android.support.constraint.ConstraintLayout>
+</layout>
